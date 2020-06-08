@@ -9,9 +9,13 @@
 #import "ViewController.h"
 #import "TestView.h"
 #import "BottomView.h"
+#import "SKFFPSLabel.h" //检测FPS
+
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIView *whiteView;
+
+@property (nonatomic, strong) SKFFPSLabel *SkfFPSLabel; //测试
 
 @end
 
@@ -30,7 +34,21 @@
 //    [self.view addSubview:bottom];
     [self.view addSubview:testV];
 
+    
+    //3.检测FPS
+    [self configuSKFFPSLabel];
+    
 }
+
+#pragma mark- 测试
+- (void)configuSKFFPSLabel{
+    _SkfFPSLabel = [[SKFFPSLabel alloc] init];
+    _SkfFPSLabel.frame = CGRectMake(10, 74, 50, 30);
+    [self.view addSubview:_SkfFPSLabel];
+    [self.view bringSubviewToFront:_SkfFPSLabel];
+}
+
+
 
 
 @end
