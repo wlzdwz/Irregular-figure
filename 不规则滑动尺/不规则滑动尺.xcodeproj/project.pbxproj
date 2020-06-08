@@ -16,6 +16,7 @@
 		E90E792621E6F3A600E0973A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E90E792521E6F3A600E0973A /* main.m */; };
 		E90E793021E6F3A600E0973A /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E90E792F21E6F3A600E0973A /* ______Tests.m */; };
 		E90E793B21E6F3A600E0973A /* ______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E90E793A21E6F3A600E0973A /* ______UITests.m */; };
+		E90E8F37248EAC58003DCED6 /* SKFFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E90E8F36248EAC58003DCED6 /* SKFFPSLabel.m */; };
 		E9D65F1121ECC2F400FEA4DD /* BottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D65F1021ECC2F400FEA4DD /* BottomView.m */; };
 		E9D65F1421ECC2FA00FEA4DD /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D65F1221ECC2FA00FEA4DD /* TestView.m */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,8 @@
 		E90E793621E6F3A600E0973A /* 不规则滑动尺UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "不规则滑动尺UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90E793A21E6F3A600E0973A /* ______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______UITests.m"; sourceTree = "<group>"; };
 		E90E793C21E6F3A600E0973A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E90E8F35248EAC58003DCED6 /* SKFFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKFFPSLabel.h; sourceTree = "<group>"; };
+		E90E8F36248EAC58003DCED6 /* SKFFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKFFPSLabel.m; sourceTree = "<group>"; };
 		E9D65F0F21ECC2F400FEA4DD /* BottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomView.h; sourceTree = "<group>"; };
 		E9D65F1021ECC2F400FEA4DD /* BottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomView.m; sourceTree = "<group>"; };
 		E9D65F1221ECC2FA00FEA4DD /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
@@ -110,6 +113,7 @@
 		E90E791521E6F3A400E0973A /* 不规则滑动尺 */ = {
 			isa = PBXGroup;
 			children = (
+				E90E8F34248EAC2D003DCED6 /* FPSTool */,
 				E90E791621E6F3A400E0973A /* AppDelegate.h */,
 				E90E791721E6F3A400E0973A /* AppDelegate.m */,
 				E90E791921E6F3A400E0973A /* ViewController.h */,
@@ -145,6 +149,15 @@
 				E90E793C21E6F3A600E0973A /* Info.plist */,
 			);
 			path = "不规则滑动尺UITests";
+			sourceTree = "<group>";
+		};
+		E90E8F34248EAC2D003DCED6 /* FPSTool */ = {
+			isa = PBXGroup;
+			children = (
+				E90E8F35248EAC58003DCED6 /* SKFFPSLabel.h */,
+				E90E8F36248EAC58003DCED6 /* SKFFPSLabel.m */,
+			);
+			path = FPSTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E90E8F37248EAC58003DCED6 /* SKFFPSLabel.m in Sources */,
 				E90E311A2212C7BF002D20A2 /* shipeAnimation.m in Sources */,
 				E90E791B21E6F3A400E0973A /* ViewController.m in Sources */,
 				E90E792621E6F3A600E0973A /* main.m in Sources */,
